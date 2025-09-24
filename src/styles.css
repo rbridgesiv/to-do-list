@@ -56,8 +56,37 @@ table {
 }
 
 .menu {
-    background-color: green;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 1em;
 }
+
+.addtask {
+    border: black solid 1px;
+    padding: 1em;
+    color: black;
+    text-align: center;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+.addtask:hover {
+    background-color: rgb(235, 235, 235);
+}
+
+.addtask:active {
+    box-shadow: 0 2px #cac9c9;
+    transform: translateY(4px);
+}
+
+.title1{
+
+}
+
+
 
 .maincontent {
     background-color: gray;
