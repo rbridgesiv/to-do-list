@@ -6,6 +6,5 @@ export function loadAddProject() {
     main.appendChild(formContainer);
 
     const form = document.createElement('form');
-    form.setAttribute('action, ')
-
+    form.setAttribute('action, ');
 }
