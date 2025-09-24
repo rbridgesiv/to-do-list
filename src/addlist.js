@@ -1,4 +1,4 @@
-export function loadAddList() {
+export function loadAddProject() {
     const main = document.getElementById('main');
 
     const formContainer = document.createElement('div');
