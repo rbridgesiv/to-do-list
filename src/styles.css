@@ -64,7 +64,7 @@ table {
     padding: 1em;
 }
 
-.addlist {
+.addProject {
     border: black solid 1px;
     padding: 1em;
     color: black;
@@ -73,11 +73,11 @@ table {
     transition: 0.3s;
 }
 
-.addlist:hover {
+.addProject:hover {
     background-color: rgb(235, 235, 235);
 }
 
-.addlist:active {
+.addProject:active {
     box-shadow: 0 2px #cac9c9;
     transform: translateY(4px);
 }
