@@ -1,8 +1,8 @@
 import './styles.css';
-import { loadAddList } from './addlist.js';
+import { loadAddProject } from './addProject.js';
 
-const addlistBtn = document.getElementById('addlist');
+const addProjectBtn = document.getElementById('addProject');
 
-addlistBtn.addEventListener ('click', () => {
-    loadAddList();
+addProjectBtn.addEventListener ('click', () => {
+    loadAddProject();
 })
