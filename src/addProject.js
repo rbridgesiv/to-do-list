@@ -7,6 +7,7 @@ export function loadAddProject() {
     const form = document.createElement('form');
     form.setAttribute('action', '#');
     form.setAttribute('method', 'post');
+    form.classList = 'newProjectForm';
 
     const titleLabel = document.createElement('label');
     titleLabel.setAttribute('for', 'project_title');
