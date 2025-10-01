@@ -11,12 +11,13 @@ export function loadAddProject() {
 
     const titleLabel = document.createElement('label');
     titleLabel.setAttribute('for', 'project_title');
+    titleLabel.textContent = 'Project Title';
 
     const titleInput = document.createElement('input');
     titleInput.type = 'text';
     titleInput.id = 'project_title';
     titleInput.name = 'project_title';
-    titleInput.placeholder = 'Project Title...';
+    titleInput.placeholder = 'Enter Here...';
 
     const submitBtn = document.createElement('button');
     submitBtn.type = 'submit';
