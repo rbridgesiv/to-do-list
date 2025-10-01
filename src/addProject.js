@@ -3,8 +3,27 @@ export function loadAddProject() {
 
     const formContainer = document.createElement('div');
     formContainer.classList = 'formContainer';
-    main.appendChild(formContainer);
 
     const form = document.createElement('form');
-    form.setAttribute('action, ');
+    form.setAttribute('action', '#');
+    form.setAttribute('method', 'post');
+
+    const titleLabel = document.createElement('label');
+    titleLabel.setAttribute('for', 'project_title');
+
+    const titleInput = document.createElement('input');
+    titleInput.type = 'text';
+    titleInput.id = 'project_title';
+    titleInput.name = 'project_title';
+    titleInput.placeholder = 'Project Title...';
+
+    const submitBtn = document.createElement('button');
+    submitBtn.type = 'submit';
+    submitBtn.textContent = 'Save';
+
+    main.appendChild(formContainer);
+    formContainer.appendChild(form);
+    form.appendChild(titleLabel);
+    form.appendChild(titleInput);
+    form.appendChild(submitBtn);
 }
