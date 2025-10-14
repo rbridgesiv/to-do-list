@@ -22,7 +22,8 @@ export function getProjects() {
       const main = document.getElementById('main');
       main.innerHTML = `<h2>${title}</h2>`;
     });
-    menu.appendChild(btn);
+    const addProjectBtn = document.getElementById('addProject');
+    menu.insertBefore(btn, addProjectBtn);
   }
   
   // Load and render saved projects on startup
