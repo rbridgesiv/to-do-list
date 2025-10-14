@@ -29,7 +29,9 @@ export function loadAddProject(menu) {
 
     main.appendChild(formContainer);
     formContainer.appendChild(form);
-    form.appendChild(titleLabel, titleInput, submitBtn);
+    form.appendChild(titleLabel);
+    form.appendChild(titleInput);
+    form.appendChild(submitBtn);
 
     form.addEventListener('submit', (e) => {
         e.preventDefault();
