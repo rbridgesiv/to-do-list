@@ -1,5 +1,9 @@
-export function loadAddProject() {
+import { saveProjectStorage, createProjectButton } from './projectStorage.js';
+
+export function loadAddProject(menu) {
     const main = document.getElementById('main');
+
+    if (document.querySelector('.newProjectForm')) return;
 
     const formContainer = document.createElement('div');
     formContainer.classList = 'formContainer';
@@ -25,7 +29,15 @@ export function loadAddProject() {
 
     main.appendChild(formContainer);
     formContainer.appendChild(form);
-    form.appendChild(titleLabel);
-    form.appendChild(titleInput);
-    form.appendChild(submitBtn);
+    form.appendChild(titleLabel, titleInput, submitBtn);
+
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        const title = titleInput.value.trim();
+        if (!title) return;
+        saveProjectStorage(title);
+        createProjectButton(title, menu);
+        formContainer.remove();
+    })
 }
