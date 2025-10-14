@@ -38,7 +38,7 @@ export function loadAddProject(menu) {
 
         const title = titleInput.value.trim();
         if (!title) return;
-        saveProjectStorage(title);
+        saveProjectToStorage(title);
         createProjectButton(title, menu);
         formContainer.remove();
     })
