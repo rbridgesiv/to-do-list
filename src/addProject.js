@@ -1,4 +1,4 @@
-import { saveProjectStorage, createProjectButton } from './projectStorage.js';
+import { saveProjectToStorage, createProjectButton } from './projectStorage.js';
 
 export function loadAddProject(menu) {
     const main = document.getElementById('main');
